@@ -129,6 +129,3 @@ Contributions are welcome. Please:
 
 This project is licensed under the BSD 3-Clause License. See the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For questions or feedback, contact arpit.s@zecdata.com.
