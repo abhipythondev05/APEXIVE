@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recently Modified Images</title>
+</head>
+<body>
+    <h1>Recently Modified Images</h1>
+
+    {% if recent_images %}
+        <ul>
+            {% for image in recent_images %}
+                <li>{{ image.file_name }} (Uploaded: {{ image.img_upload }}, Downloadable: {{ image.img_download }})</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

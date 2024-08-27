@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uploaded and Downloaded Images</title>
+</head>
+<body>
+    <h1>Uploaded and Downloaded Images</h1>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <ul>
+        {% for image in images %}
+            <li>{{ image.file_name }} - Uploaded: {{ image.img_upload }} - Downloadable: {{ image.img_download }}</li>
+        {% empty %}
+            <li>No images found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
