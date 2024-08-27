@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pilotlog_project"
+version = "0.1.0"
+description = "A simple Django project."
+license = "MIT"
+readme = "README.md"
+authors = ["Abhishek Jain <abhishek@zecdata.com>"]  # Ensure proper formatting
+
+[tool.poetry.dependencies]
+python = "^3.8"  # or the version you're using
+django = "^5.1"
+djangorestframework = "^3.15"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"  # for testing
+flake8 = "^4.0"  # for linting
+black = "^23.0"  # for code formatting
